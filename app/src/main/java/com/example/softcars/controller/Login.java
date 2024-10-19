@@ -22,7 +22,6 @@ public class Login extends AppCompatActivity {
     private EditText txtUsername, txtPassword;
     private Button btnLogin;
     private UserService userService;
-    private API api;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
