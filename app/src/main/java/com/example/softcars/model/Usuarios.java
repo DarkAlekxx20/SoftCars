@@ -1,4 +1,4 @@
-package com.example.softcars.Model;
+package com.example.softcars.model;
 
 public class Usuarios {
     private int idUsuario;

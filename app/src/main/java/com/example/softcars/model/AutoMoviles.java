@@ -1,4 +1,4 @@
-package com.example.softcars.Model;
+package com.example.softcars.model;
 
 public class AutoMoviles extends Usuarios{
     private int idAutomovil;
