@@ -16,7 +16,7 @@
             android:name=".modules.sign_in_view"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.Login"
             android:exported="true"
             android:theme="@style/Theme.SoftCars">
             <intent-filter>

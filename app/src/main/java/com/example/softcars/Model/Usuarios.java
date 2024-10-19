@@ -2,18 +2,18 @@ package com.example.softcars.Model;
 
 public class Usuarios {
     private int idUsuario;
-    private String nombreUsuarios;
-    private String contrasenia;
+    private String username;
+    private String password;
     private int estatus;
 
     public Usuarios() {
     }
 
-    public Usuarios(String nombreUsuarios, int idUsuario, int estatus, String contrasenia) {
-        this.nombreUsuarios = nombreUsuarios;
+    public Usuarios(int idUsuario, String username, String password, int estatus) {
         this.idUsuario = idUsuario;
+        this.username = username;
+        this.password = password;
         this.estatus = estatus;
-        this.contrasenia = contrasenia;
     }
 
     public int getIdUsuario() {
@@ -24,20 +24,20 @@ public class Usuarios {
         this.idUsuario = idUsuario;
     }
 
-    public String getNombreUsuarios() {
-        return nombreUsuarios;
+    public String getUsername() {
+        return username;
     }
 
-    public void setNombreUsuarios(String nombreUsuarios) {
-        this.nombreUsuarios = nombreUsuarios;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getContrasenia() {
-        return contrasenia;
+    public String getPassword() {
+        return password;
     }
 
-    public void setContrasenia(String contrasenia) {
-        this.contrasenia = contrasenia;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public int getEstatus() {
@@ -50,10 +50,10 @@ public class Usuarios {
 
     @Override
     public String toString() {
-        return "AutoMoviles{" +
+        return "Usuarios{" +
                 "idUsuario=" + idUsuario +
-                ", nombreUsuarios='" + nombreUsuarios + '\'' +
-                ", contrasenia='" + contrasenia + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
                 ", estatus=" + estatus +
                 '}';
     }
