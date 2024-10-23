@@ -7,9 +7,9 @@ public class API {
     private static Retrofit retrofit;
 
     public static Retrofit getUrl(){
-        if(retrofit.equals(null)){
+        if(retrofit == null){
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://localhost:8080/WSSoftCars/services/")
+                    .baseUrl("http://192.168.100.44:8080/WSSoftCars/services/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }

@@ -16,5 +16,5 @@ public interface UserService {
     //Interface para login
     @FormUrlEncoded
     @POST("username/login/")
-    Call<Usuarios> login(@Field("userData") String userData);
+    Call<ResponseBody> login(@Field("userData") String userData);
 }
