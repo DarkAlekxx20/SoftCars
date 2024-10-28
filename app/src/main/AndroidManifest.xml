@@ -16,7 +16,7 @@
         android:theme="@style/Theme.SoftCars"
         tools:targetApi="31">
         <activity
-            android:name=".modules.sign_in_view"
+            android:name=".controller.sign_in_view"
             android:exported="false" />
         <activity
             android:name=".controller.Login"
