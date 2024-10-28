@@ -1,5 +1,6 @@
 package com.example.softcars.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,11 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import com.example.softcars.R;
 import com.example.softcars.api.API;
-import com.example.softcars.model.Usuarios;
 import com.example.softcars.services.UserService;
-
 import org.json.JSONObject;
-
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
@@ -24,7 +22,7 @@ import retrofit2.Response;
 
 public class Login extends AppCompatActivity {
     private EditText txtUsername, txtPassword;
-    private Button btnLogin;
+    private Button btnLogin , btnSignIn;
     private UserService userService;
     private API urlBase;
     @Override
@@ -36,12 +34,14 @@ public class Login extends AppCompatActivity {
         txtUsername = findViewById(R.id.txtUsername);
         txtPassword = findViewById(R.id.txtPassword);
         btnLogin = findViewById(R.id.btnLogIn);
+        btnSignIn = findViewById(R.id.btnSignIn);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
         btnLogin.setOnClickListener(this::loginUser);
+        btnSignIn.setOnClickListener(this::signIn);
     }
 
     private void loginUser(View view){
@@ -104,5 +104,10 @@ public class Login extends AppCompatActivity {
                 }
             });
         }
+    }
+
+    private void signIn(View view){
+        Intent signin_view = new Intent(Login.this,sign_in_view.class);
+        startActivity(signin_view);
     }
 }
