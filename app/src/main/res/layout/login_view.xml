@@ -86,6 +86,16 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="SIGN IN"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="20dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -93,7 +103,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="15dp"
         android:text="© SoftCars Automotive"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
