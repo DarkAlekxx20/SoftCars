@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_status">
+        <item value="0">Inactivo</item>
+        <item value="1">Activo</item>
+    </string-array>
+</resources>
